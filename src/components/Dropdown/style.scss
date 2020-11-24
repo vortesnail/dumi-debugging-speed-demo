@@ -1,0 +1,39 @@
+@import '../../styles/variables';
+
+.#{$class-prefix} {
+  &-dropdown {
+  }
+
+  &-dropdown-label {
+    color: $primary;
+    cursor: pointer;
+
+    span {
+      margin-right: 2px;
+    }
+  }
+
+  &-dropdown-button {
+    .ant-btn {
+      &.#{$class-prefix} {
+        &-dropdown-button-label {
+          margin-right: -1px;
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+
+          &:hover,
+          &:active,
+          &:focus {
+            z-index: 100;
+          }
+        }
+
+        &-dropdown-button-icon {
+          padding: 4px 10px;
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+        }
+      }
+    }
+  }
+}

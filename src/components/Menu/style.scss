@@ -1,0 +1,98 @@
+@import '../../styles/variables';
+
+.ant-menu {
+  &.#{$class-prefix} {
+    &-menu {
+      &:not(.ant-menu-horizontal) {
+        &:not(.ant-menu-dark) {
+          .ant-menu-item-selected {
+            color: $primary;
+            background-color: $light-blue;
+          }
+
+          .ant-menu-item {
+            &::after {
+              border-right: 3px solid $primary;
+            }
+          }
+
+          .ant-menu-item-active {
+            color: $primary;
+
+            a {
+              color: $primary;
+            }
+          }
+
+          .ant-menu-submenu-active {
+            color: $primary;
+
+            .ant-menu-submenu-title:hover {
+              color: $primary;
+            }
+          }
+
+          .ant-menu-submenu-selected {
+            color: $primary;
+          }
+        }
+
+        &.ant-menu-dark {
+          .ant-menu-item-selected {
+            background-color: $primary;
+          }
+        }
+      }
+
+      &.ant-menu-horizontal {
+        &:not(.ant-menu-dark) {
+          & > .ant-menu-item-active {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+          }
+
+          & > .ant-menu-item-selected {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+          }
+
+          & > .ant-menu-submenu-active {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+
+            .ant-menu-submenu-title {
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+
+          & > .ant-menu-submenu-selected {
+            color: $primary;
+            border-bottom: 2px solid $primary;
+          }
+        }
+
+        &.ant-menu-dark {
+          & > .ant-menu-item-active {
+            background-color: $primary;
+          }
+
+          & > .ant-menu-item-selected {
+            background-color: $primary;
+          }
+
+          & > .ant-menu-submenu-active {
+            color: $primary;
+
+            .ant-menu-submenu-title {
+              &:hover {
+                color: $primary;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

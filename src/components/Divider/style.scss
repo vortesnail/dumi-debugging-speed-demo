@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.ant-divider {
+  &.#{$class-prefix} {
+    &-divider {
+    }
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "name": "文本 Text",
+  "component": "Text",
+  "isContainer": false,
+  "defaultProps": {
+    "content": "内容",
+    "color": "#333333",
+    "fontSize": 14,
+    "display": "block",
+    "tooltipColor": "primary"
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "content",
+          "label": "内容",
+          "type": "string"
+        },
+        {
+          "name": "display",
+          "label": "展现形式",
+          "type": "string"
+        },
+        {
+          "name": "tooltipContent",
+          "label": "提示框内容",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "label": "按钮类名",
+          "type": "classNameSeletor"
+        },
+        {
+          "name": "color",
+          "label": "文字颜色",
+          "type": "string"
+        },
+        {
+          "name": "tooltipColor",
+          "label": "提示框背景色",
+          "type": "string"
+        },
+        {
+          "name": "topPadding",
+          "label": "上内边距",
+          "type": "number"
+        },
+        {
+          "name": "rightPadding",
+          "label": "右内边距",
+          "type": "number"
+        },
+        {
+          "name": "bottomPadding",
+          "label": "底内边距",
+          "type": "number"
+        },
+        {
+          "name": "leftPadding",
+          "label": "左内边距",
+          "type": "number"
+        },
+        {
+          "name": "fontSize",
+          "label": "字体大小",
+          "type": "number"
+        },
+        {
+          "name": "backgroundColor",
+          "label": "背景颜色",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

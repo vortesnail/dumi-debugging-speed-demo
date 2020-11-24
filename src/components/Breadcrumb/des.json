@@ -1,0 +1,89 @@
+{
+  "name": "面包屑 Breadcrumb",
+  "component": "Breadcrumb",
+  "isContainer": false,
+  "defaultProps": {
+    "separator": "/",
+    "backgroundColor": "#fff",
+    "routes": [
+      {
+        "title": "Home",
+        "href": "#"
+      },
+      {
+        "title": "App",
+        "href": "#"
+      }
+    ]
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "routes",
+          "label": "路由配置",
+          "type": "array",
+          "controls": [
+            {
+              "name": "icon",
+              "label": "图标",
+              "type": "ReactNode"
+            },
+            {
+              "name": "title",
+              "label": "标题",
+              "type": "text"
+            },
+            {
+              "name": "href",
+              "label": "目的地址",
+              "type": "text"
+            },
+            {
+              "name": "isLink",
+              "label": "是否可跳转",
+              "type": "boolean"
+            },
+            {
+              "name": "onClick",
+              "label": "点击回调",
+              "type": "function"
+            }
+          ]
+        },
+        {
+          "name": "navTitle",
+          "label": "导航标题",
+          "type": "text"
+        },
+        {
+          "name": "separator",
+          "label": "分隔符",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "type": "classNameSeletor",
+          "label": "组件类名"
+        },
+        {
+          "name": "backgroundColor",
+          "type": "text",
+          "label": "背景颜色"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

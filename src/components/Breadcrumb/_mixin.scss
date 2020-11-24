@@ -1,0 +1,4 @@
+@mixin separator-style($margin) {
+  margin: $margin;
+  pointer-events: none;
+}

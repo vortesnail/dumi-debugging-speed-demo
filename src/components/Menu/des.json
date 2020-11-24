@@ -1,0 +1,97 @@
+{
+  "name": "菜单 Menu",
+  "component": "Menu",
+  "isContainer": false,
+  "defaultProps": {
+    "className": "",
+    "mode": "horizontal",
+    "dataSource": [],
+    "width": "100%",
+    "defaultSelectedKey": ""
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "mode",
+          "label": "菜单类型",
+          "type": "radio"
+        },
+        {
+          "name": "defaultSelectedKey",
+          "label": "初始选择key",
+          "type": "text"
+        },
+        {
+          "name": "dataSource",
+          "label": "菜单配置",
+          "type": "json",
+          "controls": [
+            {
+              "name": "key",
+              "label": "菜单项唯一键值",
+              "type": "text"
+            },
+            {
+              "name": "name",
+              "label": "菜单项名称",
+              "type": "text"
+            },
+            {
+              "name": "icon",
+              "label": "菜单项前缀图标",
+              "type": "ReactNode"
+            },
+            {
+              "name": "isLink",
+              "label": "是否跳转外链",
+              "type": "boolean"
+            },
+            {
+              "name": "path",
+              "label": "目标路由",
+              "type": "text"
+            },
+            {
+              "name": "onClick",
+              "label": "菜单项点击回调",
+              "type": "function"
+            },
+            {
+              "name": "childs",
+              "label": "子菜单",
+              "type": "array"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "type": "classNameSeletor",
+          "label": "组件类名"
+        },
+        {
+          "name": "theme",
+          "label": "主题",
+          "type": "text"
+        },
+        {
+          "name": "width",
+          "label": "宽度",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

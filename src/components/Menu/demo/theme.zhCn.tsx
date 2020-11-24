@@ -1,0 +1,79 @@
+/**
+ * title: 主题
+ * desc: 内建了两套主题 `light` 和 `dark`，默认 `light`。
+ * hideActions: ["CSB", "EXTERNAL"]
+ */
+import React, { FC, useState } from "react";
+import { ScissorOutlined, DeleteOutlined } from "@ant-design/icons";
+import { Menu } from "sparkd";
+
+const Demo: FC = () => {
+  const [theme, setTheme] = useState<"dark" | "light">("light");
+
+  const hangeTheme = () => {
+    if (theme === "dark") {
+      setTheme("light");
+      return;
+    }
+    setTheme("dark");
+  };
+
+  return (
+    <div style={{ width: 250 }}>
+      <br />
+      <br />
+      <Menu
+        mode="inline"
+        theme={theme}
+        dataSource={[
+          {
+            key: "nav1",
+            name: "Nav1",
+            icon: <ScissorOutlined />,
+            path: "www.baidu.com",
+            childs: [],
+          },
+          {
+            key: "nav2",
+            name: "Nav2",
+            icon: <DeleteOutlined />,
+            path: "www.zhihu.com",
+            childs: [
+              {
+                key: "nav2-son1",
+                name: "Nav2 son1",
+                icon: <DeleteOutlined />,
+                path: "www.zhihu.com",
+                childs: [],
+              },
+              {
+                key: "nav2-son2",
+                name: "Nav2 son2",
+                icon: <DeleteOutlined />,
+                path: "www.zhihu.com",
+                childs: [],
+              },
+            ],
+          },
+          {
+            key: "nav3",
+            name: "Nav3",
+            icon: <ScissorOutlined />,
+            path: "www.baidu.com",
+            childs: [],
+          },
+          {
+            key: "nav4",
+            name: "Nav4",
+            icon: <ScissorOutlined />,
+            path: "www.baidu.com",
+            isLink: true,
+            childs: [],
+          },
+        ]}
+      />
+    </div>
+  );
+};
+
+export default Demo;

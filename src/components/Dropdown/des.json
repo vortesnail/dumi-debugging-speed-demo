@@ -1,0 +1,53 @@
+{
+  "name": "下拉菜单 Dropdown",
+  "component": "Dropdown",
+  "isContainer": false,
+  "defaultProps": {
+    "type": "label",
+    "label": "下拉菜单",
+    "hasDownIcon": true
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "type",
+          "label": "类型",
+          "type": "text"
+        },
+        {
+          "name": "label",
+          "label": "文字内容",
+          "type": "text"
+        },
+        {
+          "name": "hasDownIcon",
+          "label": "是否有下拉图标",
+          "type": "boolean"
+        },
+        {
+          "name": "overlay",
+          "label": "下拉菜单内容",
+          "type": "json"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "label": "类名",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

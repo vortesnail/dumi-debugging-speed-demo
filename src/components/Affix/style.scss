@@ -1,0 +1,8 @@
+@import '../../styles/variables';
+
+.ant-affix {
+  &.#{$class-prefix} {
+    &-affix {
+    }
+  }
+}

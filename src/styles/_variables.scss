@@ -1,0 +1,133 @@
+// 中性色彩
+$white:                     #fff !default;
+$gray-100:                  #f2f2f2 !default;
+$gray-200:                  #eee !default;
+$gray-300:                  #999 !default;
+$gray-400:                  #808080 !default;
+$gray-500:                  #666 !default;
+$gray-600:                  #333 !default;
+$black:                     #000 !default;
+// 基础色板
+$light-blue:                #e6f7ff !default;
+$blue:                      #297efA !default;
+$green:                     #4cac93 !default;
+$purple:                    #854cac !default;
+$yellow:                    #e9c65d !default;
+$red:                       #e2582c !default;
+$orange:                    #ed9d3e !default;
+$grey:                      #5d7092 !default;
+$daybreak-blue:             #6dc8ec !default;
+$cyan:                      #5ad8a6 !default;
+$pink:                      #eea5ae !default;
+// 语义色板
+$semantic-blue:             #4a90e2 !default;
+$semantic-darker-blue:      #3688e7 !default;
+$semantic-more-darker-blue: #2d7cd8 !default;
+$semantic-yellow:           #ed9d3e !default;
+$semantic-green:            #4cac93 !default;
+$semantic-red:              #d0021b !default;
+$semantic-darker-red:       #c20119 !default;
+$semantic-more-darker-red:  #bc0017 !default;
+// 系统色板
+$primary:                     $semantic-blue !default;
+$darker-primary:              $semantic-darker-blue !default;
+$more-darker-primary:         $semantic-more-darker-blue !default;
+$success:                     $semantic-green !default;
+$info:                        $semantic-blue !default;
+$warning:                     $semantic-yellow !default;
+$danger:                      $semantic-red !default;
+$darker-danger:               $semantic-darker-red !default;
+$more-darker-danger:          $semantic-more-darker-red !default;
+$light:                       $gray-100 !default;
+$dark:                        $gray-600 !default;
+// 字体
+$font-family-sans-serif:      -apple-system, blinkmacsystemfont, "Segoe UI", roboto, "Helvetica Neue", arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji" !default;
+$font-family-monospace:       sfmono-regular, menlo, monaco, consolas, "Liberation Mono", "Courier New", monospace !default;
+$font-family-base:            $font-family-sans-serif !default;
+// 字体大小
+$font-size-base:              14px !default;
+$font-size-lg:                16px !default;
+$font-size-sm:                14px !default;
+// 字重
+$font-weight-lighter:         lighter !default;
+$font-weight-light:           300 !default;
+$font-weight-normal:          400 !default;
+$font-weight-bold:            700 !default;
+$font-weight-bolder:          bolder !default;
+$font-weight-base:            $font-weight-normal !default;
+// 行高
+$line-height-base:            22px !default;
+$line-height-lg:              24px !default;
+$line-height-sm:              22px !default;
+// 标题大小
+$h1-font-size:                $font-size-base * 2.5 !default;
+$h2-font-size:                $font-size-base * 2 !default;
+$h3-font-size:                $font-size-base * 1.75 !default;
+$h4-font-size:                $font-size-base * 1.5 !default;
+$h5-font-size:                $font-size-base * 1.25 !default;
+$h6-font-size:                $font-size-base !default;
+// 链接
+$link-color:                  $primary !default;
+$link-decoration:             none !default;
+$link-hover-color:            darken($link-color, 15%) !default;
+$link-hover-decoration:       underline !default;
+// body
+$body-bg:                     $white !default;
+$body-color:                  $gray-600 !default;
+// other
+$small-font-size:             12px !default;
+// Code
+$code-font-size:              $small-font-size !default;
+$code-color:                  $pink !default;
+$pre-color:                   null !default;
+// 边框 和 border radius
+$border-width:                1px !default;
+$border-color:                $gray-300 !default;
+$border-radius:               2px !default;
+$border-radius-lg:            4px !default;
+$border-radius-sm:            2px !default;
+// 不同类型的 box shadow
+$box-shadow-sm:               0 2px 4px rgba($black, .075) !default;
+$box-shadow:                  0 4px 8px rgba($black, .15) !default;
+$box-shadow-lg:               0 4px 16px rgba($black, .175) !default;
+$box-shadow-inset:            inset 0 1px 2px rgba($black, .075) !default;
+
+// 以下为各个组件的自定义属性值
+$class-prefix:                "spark" !default;
+// Button 按钮
+$btn-color:                   $primary !default;
+$btn-color-darker:            $darker-primary !default;
+$btn-color-more-darker:       $more-darker-primary !default;
+$btn-color-white:             $white !default;
+$btn-danger:                  $danger !default;
+$btn-danger-darker:           $darker-danger !default;
+$btn-danger-more-darker:      $more-darker-danger !default;
+$btn-white-bg:                $white !default;
+$btn-transparent-bg:          transparent !default;
+$btn-none-boder:              transparent !default;
+// Container 容器
+$contianer-arrow-transform:  rotate(90deg);
+$contianer-arrow-transform-reverse:  rotate(-90deg);
+$container-arrow-transition: transform 0.24s;
+$container-panel-padding: 16px;
+$container-panel-border-color: #d9d9d9;
+$container-border-style: solid;
+$container-badge-padding-top:10px;
+$container-badge-padding-right:20px;
+$container-header-padding:12px;
+// Input 输入框
+$input-title-font-size:        $font-size-base !default;
+$input-border-color:           #ddd !default;
+$input-border-hover-color:     $primary !default;
+$input-background-color:       $white !default;
+$input-border-radius:          $border-radius !default;
+// TimePicker 时间选择器
+$time-picker-border-color:     #ddd !default;
+$time-picker-border-bottom:    1px;
+$time-picker-border-bottom-blod: 2px;
+// Select 选择框
+$select-page-arrow-color: #737373;
+$select-page-arrow-disabled-color: #CECECE;
+// DatePicker 日期选择器
+$date-picker-border-color:     #ddd !default;
+$date-picker-border-bottom:    1px;

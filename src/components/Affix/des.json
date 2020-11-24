@@ -1,0 +1,38 @@
+{
+  "name": "按钮 Affix",
+  "component": "Affix",
+  "isContainer": false,
+  "defaultProps": {},
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "children",
+          "label": "显示内容",
+          "type": "text"
+        },
+        {
+          "name": "offsetTop",
+          "label": "距离顶部距离",
+          "type": "number"
+        },
+        {
+          "name": "offsetBottom",
+          "label": "距离顶部距离",
+          "type": "number"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": []
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

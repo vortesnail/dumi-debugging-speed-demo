@@ -1,0 +1,197 @@
+{
+  "name": "折线图 Line",
+  "component": "Line",
+  "isContainer": false,
+  "defaultProps": {
+    "className": "",
+    "title": "折线图",
+    "height": 260,
+    "isSmooth": false,
+    "hasShadow": false,
+    "hasLegend": false,
+    "dataSource": [
+      {
+        "name": "折线1",
+        "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "yData": [100, 832, 701, 1100, 300, 899, 1120]
+      },
+      {
+        "name": "折线2",
+        "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "yData": [200, 900, 312, 436, 1132, 634, 1200]
+      },
+      {
+        "name": "折线3",
+        "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "yData": [800, 123, 421, 1212, 442, 565, 634]
+      },
+      {
+        "name": "折线4",
+        "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+        "yData": [564, 532, 1200, 200, 300, 899, 321]
+      }
+    ]
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "title",
+          "label": "标题",
+          "type": "string"
+        },
+        {
+          "name": "isSmooth",
+          "label": "是否平滑曲线",
+          "type": "boolean"
+        },
+        {
+          "name": "hasShadow",
+          "label": "是否带阴影",
+          "type": "boolean"
+        },
+        {
+          "name": "hasLegend",
+          "label": "是否带图例",
+          "type": "boolean"
+        },
+        {
+          "name": "dataSource",
+          "label": "数据源",
+          "type": "array",
+          "controls": [
+            {
+              "name": "name",
+              "label": "曲线名称",
+              "type": "string"
+            },
+            {
+              "name": "xData",
+              "label": "横坐标数据",
+              "type": "string[]"
+            },
+            {
+              "name": "yData",
+              "label": "纵坐标数据",
+              "type": "string[]"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "label": "按钮类名",
+          "type": "classNameSeletor"
+        },
+        {
+          "name": "height",
+          "label": "高度",
+          "type": "string"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ],
+  "secondaryComponents": [
+    {
+      "name": "迷你折线图 Line.MiniLine",
+      "component": "Line.MiniLine",
+      "isContainer": false,
+      "defaultProps": {
+        "className": "",
+        "title": "迷你折线图",
+        "subTitle": "1.4weeks",
+        "height": 120,
+        "isSmooth": false,
+        "hasShadow": true,
+        "dataSource": [
+          {
+            "name": "迷你折线1",
+            "xData": ["Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun"],
+            "yData": [564, 532, 1200, 200, 300, 899, 321]
+          }
+        ]
+      },
+      "show": true,
+      "isInteractive": false,
+      "propDesc": [
+        {
+          "tab": "common",
+          "children": [
+            {
+              "name": "title",
+              "label": "标题",
+              "type": "string"
+            },
+            {
+              "name": "subTitle",
+              "label": "副标题",
+              "type": "string"
+            },
+            {
+              "name": "isSmooth",
+              "label": "是否平滑曲线",
+              "type": "boolean"
+            },
+            {
+              "name": "hasShadow",
+              "label": "是否带阴影",
+              "type": "boolean"
+            },
+            {
+              "name": "dataSource",
+              "label": "数据源",
+              "type": "array",
+              "controls": [
+                {
+                  "name": "name",
+                  "label": "曲线名称",
+                  "type": "string"
+                },
+                {
+                  "name": "xData",
+                  "label": "横坐标数据",
+                  "type": "string[]"
+                },
+                {
+                  "name": "yData",
+                  "label": "纵坐标数据",
+                  "type": "string[]"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "tab": "appearance",
+          "children": [
+            {
+              "name": "className",
+              "type": "classNameSeletor",
+              "label": "组件类名"
+            },
+            {
+              "name": "height",
+              "label": "高度",
+              "type": "string"
+            }
+          ]
+        },
+        {
+          "tab": "other",
+          "children": []
+        }
+      ]
+    }
+  ]
+}

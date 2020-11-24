@@ -1,0 +1,54 @@
+{
+  "name": "分割线 Divider",
+  "component": "Divider",
+  "isContainer": false,
+  "defaultProps": {},
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "dashed",
+          "label": "是否为虚线",
+          "type": "boolean"
+        },
+        {
+          "name": "orientation",
+          "label": "分割线标题位置",
+          "type": "text"
+        },
+        {
+          "name": "plain",
+          "label": "是否普通正文样式",
+          "type": "boolean"
+        },
+        {
+          "name": "type",
+          "label": "类型",
+          "type": "text"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "label": "类名",
+          "type": "text"
+        },
+        {
+          "name": "style",
+          "label": "样式对象",
+          "type": "json"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": []
+    }
+  ]
+}

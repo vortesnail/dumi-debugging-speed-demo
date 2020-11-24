@@ -1,0 +1,152 @@
+{
+  "name": "文字提示 Tooltip ",
+  "component": "Tooltip",
+  "isContainer": false,
+  "defaultProps": {
+    "arrowPointAtCenter": false,
+    "autoAdjustOverflow": true,
+    "defaultVisible": false,
+    "destroyTooltipOnHide": false,
+    "mouseEnterDelay": 0.1,
+    "mouseLeaveDelay": 0.1,
+    "placement": "top",
+    "trigger": "hover",
+    "visible": false
+  },
+  "show": true,
+  "isInteractive": false,
+  "propsDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "arrowPointAtCenter",
+          "label": "箭头是否指向目标元素中心",
+          "type": "boolean"
+        },
+        {
+          "name": "autoAdjustOverflow",
+          "label": "气泡被遮挡时自动调整位置",
+          "type": "boolean"
+        },
+        {
+          "name": "defaultVisible",
+          "label": "默认是否显隐",
+          "type": "boolean"
+        },
+        {
+          "name": "destroyTooltipOnHide",
+          "label": "关闭后是否销毁 Tooltip",
+          "type": "boolean"
+        },
+        {
+          "name": "mouseEnterDelay",
+          "label": "鼠标移入后延时多少才显示 Tooltip，单位：秒",
+          "type": "number"
+        },
+        {
+          "name": "mouseLeaveDelay",
+          "label": "鼠标移出后延时多少才隐藏 Tooltip，单位：秒",
+          "type": "number"
+        },
+        {
+          "name": "placement",
+          "label": "气泡框位置",
+          "type": "select",
+          "options": [
+            {
+              "label": "top"
+            },
+            {
+              "label": "right"
+            },
+            {
+              "label": "bottom"
+            },
+            {
+              "label": "left"
+            },
+            {
+              "label": "topLeft"
+            },
+            {
+              "label": "topRight"
+            },
+            {
+              "label": "rightTop"
+            },
+            {
+              "label": "rightBottom"
+            },
+            {
+              "label": "bottomRight"
+            },
+            {
+              "label": "bottomLeft"
+            },
+            {
+              "label": "leftBottom"
+            },
+            {
+              "label": "leftTop"
+            }
+          ]
+        },
+        {
+          "name": "title",
+          "label": "提示文字",
+          "type": "ReactNode"
+        },
+        {
+          "name": "trigger",
+          "label": "触发行为",
+          "type": "select",
+          "options": [
+            {
+              "label": "hover"
+            },
+            {
+              "label": "focus"
+            },
+            {
+              "label": "click"
+            },
+            {
+              "label": "contextMenu"
+            }
+          ]
+        },
+        {
+          "name": "visible",
+          "label": "用于手动控制浮层显隐",
+          "type": "boolean"
+        },
+        {
+          "name": "onVisibleChange",
+          "label": "显示隐藏的回调",
+          "type": "function"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "colorType",
+          "label": "颜色类别",
+          "type": "string"
+        },
+        {
+          "name": "overlayClassName",
+          "label": "卡片类名",
+          "type": "string"
+        },
+        {
+          "name": "overlayStyle",
+          "label": "卡片样式",
+          "type": "object"
+        }
+      ]
+    }
+  ]
+}

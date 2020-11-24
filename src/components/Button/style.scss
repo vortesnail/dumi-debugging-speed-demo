@@ -1,0 +1,221 @@
+@import './mixin';
+@import '../../styles/variables';
+
+.ant-btn {
+  &.#{$class-prefix} {
+    &-btn {
+    }
+
+    &-btn-small {
+    }
+
+    &-btn-middle {
+    }
+
+    &-btn-large {
+    }
+
+    &-btn-default {
+      &:active,
+      &:hover {
+        @include button-color($btn-color-darker, $btn-white-bg, $btn-color-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-color-more-darker, $btn-white-bg, $btn-color-more-darker);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: rgba(0, 0, 0, 0.25);
+        text-shadow: none;
+        background: #f5f5f5;
+        border-color: #d9d9d9;
+        box-shadow: none;
+      }
+    }
+
+    &-btn-primary {
+      @include button-color($btn-color-white, $btn-color, $btn-color);
+
+      &:active,
+      &:hover {
+        @include button-color($btn-color-white, $btn-color-darker, $btn-color-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-color-white, $btn-color-more-darker, $btn-color-more-darker);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: $btn-color-white;
+        text-shadow: none;
+        background: lighten($btn-color, 5%);
+        border-color: lighten($btn-color, 5%);
+        box-shadow: none;
+      }
+    }
+
+    &-btn-ghost {
+      &:active,
+      &:hover {
+        @include button-color($btn-color-darker, $btn-transparent-bg, $btn-color-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-color-more-darker, $btn-transparent-bg, $btn-color-more-darker);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: rgba(0, 0, 0, 0.25);
+        text-shadow: none;
+        background: #f5f5f5;
+        border-color: #d9d9d9;
+        box-shadow: none;
+      }
+    }
+
+    &-btn-dashed {
+      &:active,
+      &:hover {
+        @include button-color($btn-color-darker, $btn-white-bg, $btn-color-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-color-more-darker, $btn-white-bg, $btn-color-more-darker);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: rgba(0, 0, 0, 0.25);
+        text-shadow: none;
+        background: #f5f5f5;
+        border-color: #d9d9d9;
+        box-shadow: none;
+      }
+    }
+
+    &-btn-link {
+      @include button-color($btn-color, $btn-transparent-bg, $btn-none-boder);
+
+      &:active,
+      &:hover {
+        @include button-color($btn-color-darker, $btn-transparent-bg, $btn-none-boder);
+      }
+
+      &:focus {
+        @include button-color($btn-color-more-darker, $btn-transparent-bg, $btn-none-boder);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: rgba(0, 0, 0, 0.25);
+        text-shadow: none;
+        box-shadow: none;
+      }
+    }
+  }
+}
+
+.ant-btn-dangerous {
+  &.#{$class-prefix} {
+    &-btn {
+      @include button-color($btn-danger, $btn-white-bg, $btn-danger);
+    }
+
+    &-btn-small {
+    }
+
+    &-btn-middle {
+    }
+
+    &-btn-large {
+    }
+
+    &-btn-default {
+      &:active,
+      &:hover {
+        @include button-color($btn-danger-darker, $btn-white-bg, $btn-danger-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-danger-more-darker, $btn-white-bg, $btn-danger-more-darker);
+      }
+    }
+
+    &-btn-primary {
+      @include button-color($btn-color-white, $btn-danger, $btn-danger);
+
+      &:active,
+      &:hover {
+        @include button-color($btn-color-white, $btn-danger-darker, $btn-danger-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-color-white, $btn-danger-more-darker, $btn-danger-more-darker);
+      }
+
+      &[disabled],
+      &[disabled]:hover,
+      &[disabled]:focus,
+      &[disabled]:active {
+        color: $btn-color-white;
+        text-shadow: none;
+        background: lighten($btn-danger, 40%);
+        border-color: lighten($btn-danger, 40%);
+        box-shadow: none;
+      }
+    }
+
+    &-btn-ghost {
+      &:active,
+      &:hover {
+        @include button-color($btn-danger-darker, $btn-transparent-bg, $btn-danger-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-danger-more-darker, $btn-transparent-bg, $btn-danger-more-darker);
+      }
+    }
+
+    &-btn-dashed {
+      &:active,
+      &:hover {
+        @include button-color($btn-danger-darker, $btn-white-bg, $btn-danger-darker);
+      }
+
+      &:focus {
+        @include button-color($btn-danger-more-darker, $btn-white-bg, $btn-danger-more-darker);
+      }
+    }
+
+    &-btn-link {
+      @include button-color($btn-danger, $btn-transparent-bg, $btn-none-boder);
+
+      &:active,
+      &:hover {
+        @include button-color($btn-danger-darker, $btn-transparent-bg, $btn-none-boder);
+      }
+
+      &:focus {
+        @include button-color($btn-danger-more-darker, $btn-transparent-bg, $btn-none-boder);
+      }
+    }
+
+    &-btn-text {
+      border-color: $btn-none-boder;
+    }
+  }
+}

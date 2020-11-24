@@ -1,0 +1,48 @@
+@import './mixin';
+@import '../../styles/variables';
+
+.#{$class-prefix} {
+  &-breadcrumb {
+    color: $gray-400;
+    font-size: $font-size-base;
+    cursor: default;
+  }
+
+  &-breadcrumb-item {
+    .#{$class-prefix} {
+      &-breadcrumb-item-separator {
+        @include separator-style(0 8px);
+      }
+
+      &-breadcrumb-item-click-area:not(.#{$class-prefix}-breadcrumb-item-click-area-not-click) {
+        cursor: pointer;
+
+        &:hover {
+          color: $primary;
+        }
+
+        .#{$class-prefix} {
+          &-breadcrumb-item-icon {
+            margin-right: 2px;
+          }
+
+          &-breadcrumb-item-title {
+          }
+        }
+      }
+
+      &-breadcrumb-item-click-area-current {
+        color: $gray-600;
+        pointer-events: none;
+
+        &:hover {
+          color: $gray-600;
+        }
+      }
+
+      &-breadcrumb-item-suffix-separator {
+        @include separator-style(0 8px);
+      }
+    }
+  }
+}

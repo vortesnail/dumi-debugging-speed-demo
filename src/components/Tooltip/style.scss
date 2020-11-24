@@ -1,0 +1,9 @@
+@import '../../styles/variables';
+
+.ant-tooltip {
+  &-content {
+    .ant-tooltip-inner {
+      padding: 10px 14px;
+    }
+  }
+}

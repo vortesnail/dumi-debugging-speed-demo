@@ -1,0 +1,88 @@
+{
+  "name": "按钮 Button",
+  "component": "Button",
+  "isContainer": false,
+  "defaultProps": {
+    "type": "default",
+    "size": "middle"
+  },
+  "show": true,
+  "isInteractive": false,
+  "propDesc": [
+    {
+      "tab": "common",
+      "children": [
+        {
+          "name": "children",
+          "label": "名称",
+          "type": "text"
+        },
+        {
+          "name": "type",
+          "label": "类型",
+          "type": "radio"
+        },
+        {
+          "name": "icon",
+          "label": "图标",
+          "type": "ReactNode"
+        },
+        {
+          "name": "size",
+          "label": "尺寸",
+          "type": "text"
+        },
+        {
+          "name": "block",
+          "label": "块状显示",
+          "type": "boolean"
+        },
+        {
+          "name": "shape",
+          "label": "形状",
+          "type": "text"
+        },
+        {
+          "name": "loading",
+          "label": "是否加载中",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "tab": "appearance",
+      "children": [
+        {
+          "name": "className",
+          "type": "classNameSeletor",
+          "label": "按钮类名"
+        },
+        {
+          "name": "danger",
+          "label": "是否危险",
+          "type": "boolean"
+        },
+        {
+          "name": "ghost",
+          "label": "是否背景透明",
+          "type": "boolean"
+        }
+      ]
+    },
+    {
+      "tab": "other",
+      "children": [
+        {
+          "name": "disabled",
+          "label": "是否禁用",
+          "type": "boolean"
+        },
+        {
+          "name": "onClick",
+          "label": "点击事件",
+          "type": "function"
+        }
+      ]
+    }
+  ]
+}

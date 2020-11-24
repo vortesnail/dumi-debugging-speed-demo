@@ -1,0 +1,11 @@
+@import '../../styles/variables';
+
+.#{$class-prefix} {
+  &-text {
+    margin: 0;
+  }
+
+  &-text-inline {
+    display: inline-block;
+  }
+}
